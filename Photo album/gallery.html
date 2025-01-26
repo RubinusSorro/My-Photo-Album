@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photo Album</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>PHOTO ALBUM</header>
+  <div class="menu">
+      <button id="upload-btn">
+          <img src="upload button.png" alt="Upload Button">
+      </button>
+      
+      <div id="dropdown-menu" class="dropdown">
+          <button onclick="uploadImage('Selfies')">Selfies</button>
+          <button onclick="uploadImage('Family')">Family</button>
+          <button onclick="uploadImage('Friends')">Friends</button>
+      </div>
+  </div>
+
+  <div class="secondary-menu">
+      <button>All Photos</button>
+      <button>Selfies</button>
+      <button>Family</button>
+      <button>Friends</button>
+  </div>
+
+  <div class="gallery" id="gallery"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
